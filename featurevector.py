@@ -50,6 +50,7 @@ def writerow(g, l, d, selectedonly=False):
 		g.write(str(l[selectedattr[-1]]) + '\n')
 
 f = open("basicFeatures_200.csv")
+#f = open("basicFeatures.csv")
 g = open("/tmp/featurevector.csv", 'w')
 writerow(g, title, ',', True)
 lbf = []
@@ -66,4 +67,3 @@ for line in f:
 	lresult.append(lbf[11])
 	writerow(g, lresult, ',', True)
 	assert(len(lresult) == len(title))
-	break
