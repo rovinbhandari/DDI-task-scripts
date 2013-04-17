@@ -59,6 +59,35 @@ Weighted Avg.    0.833     0.342      0.861     0.833     0.844      0.851
   1518  2502 |     b = true
 
 =====================================================================================
+NB 4 fold 85
+Time taken to build model: 1.56 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       23098               83.1102 %
+Incorrectly Classified Instances      4694               16.8898 %
+Kappa statistic                          0.4047
+Mean absolute error                      0.1929
+Root mean squared error                  0.3568
+Relative absolute error                 77.945  %
+Root relative squared error            101.432  %
+Total Number of Instances            27792     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.871     0.407      0.927     0.871     0.898      0.841    false
+                 0.593     0.129      0.438     0.593     0.504      0.841    true
+Weighted Avg.    0.831     0.367      0.856     0.831     0.841      0.841
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 20716  3056 |     a = false
+  1638  2382 |     b = true
+
+
 
 Instances ALL with ZeroR in WEKA with feature selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
